@@ -19,20 +19,27 @@
     <nav class="main-nav">
         <a href="/" class="logo text-medium">Nginep</a>
         <ul class="nav-links">
-            <li><a href="/" class="nav-button">Home</a></li>
-            <li><a href="/browse" class="nav-button">Browse</a></li>
-            <li><a href="/review" class="nav-button">Review</a></li>
+            <li><a href="/" class="nav-button text-primary-dark">Home</a></li>
+            <li><a href="./browse.html" class="nav-button text-primary-dark">Browse</a></li>
+            <li><a href="/review" class="nav-button text-primary-dark">Review</a></li>
         </ul>
     </nav>
 </header>
 
 <main>
     <section class="hero">
-        <h1 class="text-medium text-primary-dark">A place where you can <br> <strong>take a rest peacefully</strong>
-        </h1>
-        <p class="text-secondary">Forget your work for a little while and let <br> your head and body rest peacefully in
-            <br> our beautiful places</p>
-        <a href="#popular-places" class="cta-button">Show Me</a>
+        <div class="cta-hero">
+            <h1 class="text-medium text-primary-dark">A place where you can <br> <strong>take a rest peacefully</strong>
+            </h1>
+            <p class="text-secondary">Forget your work for a little while and let <br> your head and body rest
+                peacefully in
+                <br> our beautiful places</p>
+            <a href="#popular-places" class="cta-button">Show Me</a>
+        </div>
+        <div class="img-hero">
+            <div class="img-bg"></div>
+            <img src="./assets/hero.jpeg" alt="">
+        </div>
     </section>
 
     <section id="popular-places" class="popular-section">
@@ -96,7 +103,7 @@
             <article class="choose-card">
                 <img src="./assets/nature.jpeg" alt="Nature retreat accommodation">
                 <div class="place-info">
-                    <p class="place-nam text-medium text-primary-dark">Nature</p>
+                    <p class="place-name text-medium text-primary-dark">Nature</p>
                     <p class="place-location text-regular text-secondary">4000+ units</p>
                 </div>
             </article>
@@ -131,7 +138,7 @@
             <article class="choose-card">
                 <img src="./assets/nature.jpeg" alt="Nature retreat accommodation">
                 <div class="place-info">
-                    <p class="place-nam text-medium text-primary-dark">Nature</p>
+                    <p class="place-name text-medium text-primary-dark">Nature</p>
                     <p class="place-location text-regular text-secondary">4000+ units</p>
                 </div>
             </article>
@@ -150,8 +157,8 @@
     <div class="footer-content">
         <section class="social">
             <h2 class="text-medium text-primary-dark">Nginep</h2>
-            <p class="text-secondary text-regular">We serve you well that you want <br> to always take a rest</p>
             <div class="social-links">
+                <p class="text-secondary text-regular">We serve you well that you want <br> to always take a rest</p>
                 <a href="https://facebook.com/nginepaja" class="media">
                     <img src="./assets/Facebook.png" alt="Facebook">
                     <span class="text-regular text-secondary">nginepaja</span>
@@ -168,8 +175,8 @@
         </section>
 
         <section class="footer-links">
+            <h3 class="text-primary-dark text-medium">Tutorial</h3>
             <div class="footer-column">
-                <h3 class="text-primary-dark text-medium">Tutorial</h3>
                 <nav>
                     <ul>
                         <li><a href="/tutorial/new-account">Creating a new account</a></li>

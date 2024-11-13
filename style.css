@@ -1,5 +1,8 @@
-.main-nav {
+header {
     border-bottom: solid rgba(229, 229, 229, 1);
+}
+
+.main-nav {
     margin: 10px 0;
     padding: 10px 17px;
 }
@@ -18,7 +21,11 @@
     display: none;
 }
 
-.hero {
+.hero img {
+    display: none;
+}
+
+.cta-hero {
     display: flex;
     flex-direction: column;
     gap: 40px;
@@ -148,11 +155,11 @@
     margin: 60px 16px;
 }
 
-.footer-column {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
+/*.footer-column {*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*    gap: 20px;*/
+/*}*/
 
 .footer-links ul {
     display: flex;
@@ -166,29 +173,135 @@
     color: var(--color-secondary-text);
 }
 
+/* Browse */
 .browse-hero{
     display: flex;
     flex-direction: column;
     gap: 14px;
-    margin: 30px 16px;
+    margin: 60px 16px;
+}
+
+.browse-hero h1{
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 21px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+
 }
 
 .browse-hero p{
     font-size: 14px;
+    line-height: 21px;
 }
 
 .listings .container{
+    display: flex;
+    flex-direction: column;
+    gap: 29px;
+    margin: 30px 16px;
+}
+
+.listings p {
+    font-size: 14px;
+}
+
+.listings .container {
     margin: 30px 28px;
 }
 
-.listings .container img{
+.listings img {
     width: 100%;
     height: 350px;
     object-fit: cover;
     border-radius: 8px;
 }
 
-.listings-card{
+.listing-card{
     position: relative;
-
 }
+
+.listings .listing-card{
+    box-shadow: rgba(17, 12, 46, 0.22) 0px 48px 100px 0px;
+}
+
+.listings figcaption{
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    padding: 0.75rem;
+}
+
+.listing-title{
+    display: flex;
+    justify-content: space-between;
+}
+
+.listing-card figcaption h3{
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
+    margin: 0;
+}
+
+.listing-card figcaption p{
+    color: white;
+    font-size: 0.875rem;
+    margin: 0.25rem 0;
+}
+
+/* Home Desktop*/
+@media only screen and (min-width: 1024px) {
+    .main-nav {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 150px;
+    }
+
+    .nav-links {
+        display: flex;
+        flex-direction: row;
+        gap: 32px;
+    }
+
+    header .main-nav .nav-links li {
+        list-style-type: none;
+    }
+
+    .popular-section .container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .popular-section .container img {
+        width: 263px;
+        height: 350px;
+        gap: 29px;
+        border-radius: 8px;
+    }
+
+    .choose-section .container {
+        display: grid;
+        grid-template-columns:repeat(5, 1fr);
+    }
+
+    .hero {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .cta-hero {
+        width: 100%;
+    }
+
+    /*Browse*/
+    .listings .container{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        /*background-color: #0042CS8;*/
+    }
+}
+
+
