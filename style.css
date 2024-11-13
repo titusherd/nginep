@@ -1,226 +1,194 @@
-body {
-    margin: 10px 150px;
-    border: 100px #0042C8;
-    .poppins-medium
+.main-nav {
+    border-bottom: solid rgba(229, 229, 229, 1);
+    margin: 10px 0;
+    padding: 10px 17px;
 }
 
-.hero{
-    /*background-color: #0042C8;*/
-    border: solid 1px #0042C8;
-}
-
-.hero h1 {
-    font-size: 40px;
-    font-weight: 500;
-    line-height: 60px;
-    text-align: left;
-    color: #152C5B;
-}
-
-.hero p {
+.main-nav .logo {
+    display: flex;
+    align-items: center;
     font-size: 18px;
-    font-weight: 400;
     line-height: 27px;
     text-align: left;
-    color: #717171;
+    text-decoration: none;
+    margin-left: 17px;
 }
 
-.hero button {
-    width: 201px;
-    height: 43px;
-    padding: 8px 60px 8px 60px;
+.nav-links {
+    display: none;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin: 60px 16px;
+}
+
+
+.hero .cta-button {
+    background-color: var(--color-primary);
+    color: white;
+    width: 152px;
+    height: 36px;
+    padding: 6px 40px 6px 40px;
     gap: 10px;
     border-radius: 8px;
-    color: white;
-    background: #0042C8;
-    border: none;
-}
-
-nav {
-    padding: 20px 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.logo {
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 30px;
-    text-align: left;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
-    color: #0042C8;
-}
-
-.poppins-medium {
-    font-family: "Poppins", serif;
-    font-weight: 500;
-    font-style: normal;
-    font-size: 20px;
-}
-
-.navButton {
-    border: none;
-    text-decoration: none;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-}
-
-.popular-section {
-    border: solid 1px;
-    display: grid;
-    justify-content: center;
-}
-
-.popular-section h3 {
-    font-family: "Poppins", serif;
-    font-size: 32px;
-    font-weight: 500;
-    line-height: 48px;
     text-align: center;
 }
 
+.popular-section {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    margin: 60px 16px;
+}
+
 .popular-section .container {
-    /*background-color: black;*/
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    display: flex;
+    flex-direction: column;
     gap: 29px;
 }
 
-.popular-section .container img {
-    width: 263px;.popular-section {
-    display: grid;
-    justify-content: center;
+.place-card {
+    display: flex;
+    flex-direction: column;
+    gap: 12px
 }
+
+.place-card img {
+    width: 100%;
     height: 350px;
     object-fit: cover;
     border-radius: 8px;
 }
 
-.place-name {
-    font-family: "Poppins", serif;
-    font-size: 22px;
-    font-weight: 500;
-    line-height: 33px;
-    text-align: left;
+.place-info {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
 }
 
-.place-location {
-    font-family: "Poppins", serif;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 24px;
-    text-align: left;
-    color: #717171;;
+.place-name {
+    font-size: 18px;
 }
 
 .choose-section {
-    display: grid;
-    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    margin: 60px 16px;
+    gap: 32px;
 }
 
-.choose-section h3{
-    font-size: 32px;
-    font-weight: 500;
-    line-height: 48px;
+.choose-section h2 {
     text-align: center;
 }
 
 .choose-section .container {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 35px;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
 }
 
-.choose-section img {
-    width: 200px;
+.choose-card {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.choose-card img {
+    width: 100%;
     height: 200px;
+    object-fit: cover;
     border-radius: 8px;
 }
 
-footer {
+.choose-card .place-info {
     display: flex;
-    justify-content: space-between;
-}
-
-footer p{
     font-size: 12px;
-    font-weight: 400;
-    line-height: 18px;
-    text-align: left;
+    flex-direction: column;
+    gap: 4px;
 }
 
-
-footer h3{
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 30px;
-    text-align: left;
-    color: #0042C8;
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin: 60px 16px;
 }
 
-.media {
+.social {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.social-links {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.social-links a {
     display: flex;
     align-items: center;
-    gap: 20px;
-
+    color: var(--color-primary);
+    text-decoration: none;
 }
 
-.media img {
+.social-links a img {
     width: 40px;
     height: 40px;
 }
 
-footer .right{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 56px;
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin: 60px 16px;
 }
 
-.right p {
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 18px;
-    text-align: left;
+.footer-column {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
-@media (max-width: 700px) {
-    .popular-section {
-        border: solid 1px;
-        display: grid;
-        justify-content: center;
-    }
-
-    .popular-section .container {
-        /*background-color: red;*/
-        display: flex;
-        flex-direction: column;
-        gap: 29px;
-    }
-
-    .popular-section .container img{
-        width: 288px;
-        height: 350px;
-        object-fit: cover;
-    }
-
-    .choose-section .container {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 35px;
-    }
-
-    .choose-section img {
-        width: 136px;
-        height: 200px;
-        border-radius: 8px;
-        object-fit: cover;
-    }
-
-
-
+.footer-links ul {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    list-style-type: none;
 }
 
+.footer-links a {
+    text-decoration: none;
+    color: var(--color-secondary-text);
+}
 
+.browse-hero{
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    margin: 30px 16px;
+}
+
+.browse-hero p{
+    font-size: 14px;
+}
+
+.listings .container{
+    margin: 30px 28px;
+}
+
+.listings .container img{
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.listings-card{
+    position: relative;
+
+}

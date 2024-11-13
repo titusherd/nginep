@@ -1,159 +1,207 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
-    <title>Nginep</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Nginep - Find peaceful places to rest and stay across the world">
+
+    <title>Nginep - Your Peaceful Rest Destination</title>
+
+    <link rel="stylesheet" href="globals.css">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
           rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-<nav>
-    <p class="logo poppins-bold">Nginep</p>
-    <div>
-        <button class="navButton">Home</button>
-        <button class="navButton">Browse</button>
-        <button class="navButton">Review</button>
-    </div>
-</nav>
-<section class="hero">
-    <h1>A place where you can <br> <b>take a rest peacefully</b></h1>
-    <p>Forget your work for a little while, and let your head and <br> body rest peacefully in our beautiful places</p>
+<header>
+    <nav class="main-nav">
+        <a href="/" class="logo text-medium">Nginep</a>
+        <ul class="nav-links">
+            <li><a href="/" class="nav-button">Home</a></li>
+            <li><a href="/browse" class="nav-button">Browse</a></li>
+            <li><a href="/review" class="nav-button">Review</a></li>
+        </ul>
+    </nav>
+</header>
 
-    <button>Show Me
-    </button>
-</section>
+<main>
+    <section class="hero">
+        <h1 class="text-medium text-primary-dark">A place where you can <br> <strong>take a rest peacefully</strong>
+        </h1>
+        <p class="text-secondary">Forget your work for a little while and let <br> your head and body rest peacefully in
+            <br> our beautiful places</p>
+        <a href="#popular-places" class="cta-button">Show Me</a>
+    </section>
 
-<section class="popular-section">
-    <h3>Most Popular Places</h3>
-    <div class="container">
-        <div class="">
-            <img src="./assets/kuta-house.jpeg" alt="">
-            <p class="place-name">Kuta House</p>
-            <p class="place-location">Bali, Indonesia</p>
+    <section id="popular-places" class="popular-section">
+        <h2 class="text-primary-dark text-medium">Most Popular Places</h2>
+        <div class="container">
+            <article class="place-card">
+                <img src="./assets/kuta-house.jpeg" alt="Kuta House exterior view">
+                <div class="place-info">
+                    <p class="place-name text-medium text-primary-dark">Kuta House</p>
+                    <p class="place-location text-regular text-secondary">Bali, Indonesia</p>
+                </div>
+            </article>
+            <article class="place-card">
+                <img src="./assets/hilton-galveston.jpeg" alt="Hilton Galveston exterior view">
+                <div class="place-info">
+                    <p class="place-name text-medium text-primary-dark">Hilton Galveston</p>
+                    <p class="place-location">Texas, US</p>
+                </div>
+            </article>
+            <article class="place-card">
+                <img src="./assets/encuentro-guadalupe.jpeg" alt="Encuentro Guadalupe exterior view">
+                <div class="place-info">
+                    <p class="place-name text-medium text-primary-dark">Encuentro Guadalupe</p>
+                    <p class="place-location text-regular text-secondary">El Porvenir, Mexico</p>
+                </div>
+            </article>
+            <article class="place-card">
+                <img src="./assets/oneeighty-dayclub.jpeg" alt="Oneeighty Dayclub view">
+                <div class="place-info">
+                    <p class="place-name text-medium text-primary-dark">Oneeighty Dayclub</p>
+                    <p class="place-location text-regular text-secondary">Bali, Indonesia</p>
+                </div>
+            </article>
         </div>
-        <div>
-            <img src="./assets/hilton-galveston.jpeg" alt="">
-            <p class="place-name">Hilton Galveston</p>
-            <p class="place-location">Texas, US</p>
-        </div>
-        <div>
-            <img src="./assets/encuentro-guadalupe.jpeg" alt="">
-            <p class="place-name">Encuentro Guadalupe</p>
-            <p class="place-location">El Porvenir, Mexico</p>
-        </div>
-        <div>
-            <img src="./assets/oneeighty-dayclub.jpeg" alt="">
-            <p class="place-name">Oneeighty Dayclub</p>
-            <p class="place-location">Bali, Indonesia</p>
-        </div>
-    </div>
-</section>
+    </section>
 
-<section class="choose-section">
-    <h3>Choose Your Comfort</h3>
-    <div class="container">
-        <div>
-            <img src="./assets/house.jpeg" alt="house">
-            <p class="place-name">Whole House</p>
-            <p class="place-location">4000+ units</p>
+    <section class="choose-section">
+        <h2 class="text-primary-dark text-medium">Choose Your Comfort</h2>
+        <div class="container">
+            <article class="choose-card">
+                <img src="./assets/house.jpeg" alt="Luxurious whole house accommodation">
+                <div class="place-info">
+                    <p class="place-name text-medium text-primary-dark">Whole House</p>
+                    <p class="place-location text-regular text-secondary">4000+ units</p>
+                </div>
+            </article>
+            <article class="choose-card">
+                <img src="./assets/apartments.jpeg" alt="Modern apartment buildings">
+                <div class="place-info">
+                    <p class="place-name text-medium text-primary-dark">Apartments</p>
+                    <p class="place-location text-regular text-secondary">4000+ units</p>
+                </div>
+            </article>
+            <article class="choose-card">
+                <img src="./assets/beach.jpeg" alt="Beachfront accommodation">
+                <div class="place-info">
+                    <p class="place-name text-medium text-primary-dark">Beach</p>
+                    <p class="place-location text-regular text-secondary">4000+ units</p>
+                </div>
+            </article>
+            <article class="choose-card">
+                <img src="./assets/nature.jpeg" alt="Nature retreat accommodation">
+                <div class="place-info">
+                    <p class="place-nam text-medium text-primary-dark">Nature</p>
+                    <p class="place-location text-regular text-secondary">4000+ units</p>
+                </div>
+            </article>
+            <article class="choose-card">
+                <img src="./assets/barbeque.jpeg" alt="Accommodation with barbeque facilities">
+                <div class="place-info">
+                    <p class="place-name text-medium text-primary-dark">Barbeque</p>
+                    <p class="place-location text-regular text-secondary">4000+ units</p>
+                </div>
+            </article>
+            <article class="choose-card">
+                <img src="./assets/house.jpeg" alt="Luxurious whole house accommodation">
+                <div class="place-info">
+                    <p class="place-name text-medium text-primary-dark">Whole House</p>
+                    <p class="place-location text-regular text-secondary">4000+ units</p>
+                </div>
+            </article>
+            <article class="choose-card">
+                <img src="./assets/apartments.jpeg" alt="Modern apartment buildings">
+                <div class="place-info">
+                    <p class="place-name text-medium text-primary-dark">Apartments</p>
+                    <p class="place-location text-regular text-secondary">4000+ units</p>
+                </div>
+            </article>
+            <article class="choose-card">
+                <img src="./assets/beach.jpeg" alt="Beachfront accommodation">
+                <div class="place-info">
+                    <p class="place-name text-medium text-primary-dark">Beach</p>
+                    <p class="place-location text-regular text-secondary">4000+ units</p>
+                </div>
+            </article>
+            <article class="choose-card">
+                <img src="./assets/nature.jpeg" alt="Nature retreat accommodation">
+                <div class="place-info">
+                    <p class="place-nam text-medium text-primary-dark">Nature</p>
+                    <p class="place-location text-regular text-secondary">4000+ units</p>
+                </div>
+            </article>
+            <article class="choose-card">
+                <img src="./assets/barbeque.jpeg" alt="Accommodation with barbeque facilities">
+                <div class="place-info">
+                    <p class="place-name text-medium text-primary-dark">Barbeque</p>
+                    <p class="place-location text-regular text-secondary">4000+ units</p>
+                </div>
+            </article>
         </div>
-        <div>
-            <img src="./assets/apartments.jpeg" alt="house">
-            <p class="place-name">Apartments</p>
-            <p class="place-location">4000+ units</p>
-        </div>
-        <div>
-            <img src="./assets/beach.jpeg" alt="house">
-            <p class="place-name">Beach</p>
-            <p class="place-location">4000+ units</p>
-        </div>
-        <div>
-            <img src="./assets/nature.jpeg" alt="house">
-            <p class="place-name">Nature</p>
-            <p class="place-location">4000+ units</p>
-        </div>
-        <div>
-            <img src="./assets/barbeque.jpeg" alt="house">
-            <p class="place-name">Barbeque</p>
-            <p class="place-location">4000+ units</p>
-        </div>
-        <div>
-            <img src="./assets/house.jpeg" alt="house">
-            <p class="place-name">Whole House</p>
-            <p class="place-location">4000+ units</p>
-        </div>
-        <div>
-            <img src="./assets/apartments.jpeg" alt="house">
-            <p class="place-name">Apartments</p>
-            <p class="place-location">4000+ units</p>
-        </div>
-        <div>
-            <img src="./assets/beach.jpeg" alt="house">
-            <p class="place-name">Beach</p>
-            <p class="place-location">4000+ units</p>
-        </div>
-        <div>
-            <img src="./assets/nature.jpeg" alt="house">
-            <p class="place-name">Nature</p>
-            <p class="place-location">4000+ units</p>
-        </div>
-        <div>
-            <img src="./assets/barbeque.jpeg" alt="house">
-            <p class="place-name">Barbeque</p>
-            <p class="place-location">4000+ units</p>
-        </div>
-    </div>
-</section>
+    </section>
+</main>
 
 <footer>
-    <div>
-        <div class="social">
-            <h3>Nginep</h3>
-            <p>We serve you well that you want <br> to always take a rest</p>
-            <div class="media">
-                <img src="./assets/Facebook.png" alt="">
-                <p>nginepaja</p>
+    <div class="footer-content">
+        <section class="social">
+            <h2 class="text-medium text-primary-dark">Nginep</h2>
+            <p class="text-secondary text-regular">We serve you well that you want <br> to always take a rest</p>
+            <div class="social-links">
+                <a href="https://facebook.com/nginepaja" class="media">
+                    <img src="./assets/Facebook.png" alt="Facebook">
+                    <span class="text-regular text-secondary">nginepaja</span>
+                </a>
+                <a href="https://instagram.com/nginepaja" class="media">
+                    <img src="./assets/Instagram.png" alt="Instagram">
+                    <span class="text-regular text-secondary">@nginepaja</span>
+                </a>
+                <a href="https://twitter.com/nginepaja" class="media">
+                    <img src="./assets/Twitter%20Squared.png" alt="Twitter">
+                    <span class="text-regular text-secondary">@nginepaja</span>
+                </a>
             </div>
-            <div class="media">
-                <img src="./assets/Instagram.png" alt="">
-                <p>@nginepaja</p>
+        </section>
+
+        <section class="footer-links">
+            <div class="footer-column">
+                <h3 class="text-primary-dark text-medium">Tutorial</h3>
+                <nav>
+                    <ul>
+                        <li><a href="/tutorial/new-account">Creating a new account</a></li>
+                        <li><a href="/tutorial/choose-room">Choosing a room</a></li>
+                        <li><a href="/tutorial/payment">How to pay</a></li>
+                        <li><a href="/tutorial/checkin">How to CheckIn</a></li>
+                    </ul>
+                </nav>
             </div>
-            <div class="media">
-                <img src="./assets/Twitter%20Squared.png" alt="">
-                <p>@nginepaja</p>
+
+            <div class="footer-column">
+                <h3 class="text-primary-dark text-medium">About</h3>
+                <nav>
+                    <ul>
+                        <li><a href="/terms">Terms & Service</a></li>
+                        <li><a href="/privacy">Privacy Policy</a></li>
+                        <li><a href="/about">About Us</a></li>
+                        <li><a href="/refund">Refund</a></li>
+                    </ul>
+                </nav>
             </div>
-        </div>
-    </div>
-    <div class="right">
-        <div>
-            <h3>Tutorial</h3>
-            <p>Creating a new account</p>
-            <p>Choosing a room</p>
-            <p>How to pay</p>
-            <p>How to CheckIn</p>
-        </div>
-        <div>
-            <h3>About</h3>
-            <p>Terms & Servcie</p>
-            <p>Privacy Policy</p>
-            <p>About Us</p>
-            <p>Refund</p>
-        </div>
-        <div>
-            <h3>Contact</h3>
-            <p>ask@nginep.com</p>
-            <p>+62 21-551445</p>
-            <p>Bukit Algoritma, Indonesia</p>
-        </div>
-        <div>
-        </div>
+
+            <div class="footer-column">
+                <h3 class="text-primary-dark text-medium">Contact</h3>
+                <ul>
+                    <li><a href="mailto:ask@nginep.com">ask@nginep.com</a></li>
+                    <li><a href="tel:+62-21-551445">+62 21-551445</a></li>
+                    <li>Bukit Algoritma, Indonesia</li>
+                </ul>
+            </div>
+        </section>
     </div>
 </footer>
-
-
 </body>
 </html>
