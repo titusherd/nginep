@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Nginep - Find peaceful places to rest and stay across the world">
+
+    <title>Nginep - Your Peaceful Rest Destination</title>
+
+    <link rel="stylesheet" href="globals.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+          rel="stylesheet">
+</head>
+<body>
+<header>
+    <nav class="main-nav">
+        <a href="/" class="logo text-medium">Nginep</a>
+        <ul class="nav-links">
+            <li><a href="/" class="nav-button text-primary-dark">Home</a></li>
+            <li><a href="/browse" class="nav-button text-primary-dark">Browse</a></li>
+            <li><a href="/review" class="nav-button text-primary-dark">Review</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section class="review-section">
+        <h2>Leave us A Review</h2>
+        <p class="subtitle">Help us in creating a better experience for your future stay</p>
+
+        <form>
+            <input type="text" class="input-field" placeholder="Name" required>
+
+            <div class="star-rating">
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star empty">★</span>
+            </div>
+
+            <textarea class="input-field" placeholder="Message" required></textarea>
+
+            <button type="submit" class="submit-btn">Submit</button>
+        </form>
+        </div>
+
+        <div class="table-container">
+            <table class="testimonials-table">
+                <thead>
+                <tr>
+                    <th>No</th>
+                    <th>Name</th>
+                    <th>Rating</th>
+                    <th>Messages</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>1.</td>
+                    <td>Daniel Haryono</td>
+                    <td>
+                        <div class="rating-stars">
+                            ★★★★<span class="empty">★</span>
+                        </div>
+                    </td>
+                    <td>I want to register my house in Yogyakarta Indonesia, how can I do that?<br>Thanks.</td>
+                </tr>
+                <tr>
+                    <td>2.</td>
+                    <td>Abimanyu B. C.</td>
+                    <td>
+                        <div class="rating-stars">
+                            ★★★★<span class="empty">★</span>
+                        </div>
+                    </td>
+                    <td>Is there any discount for business trip?</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="pagination">
+            <a href="#">&lt;</a>
+            <a href="#">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <span>...</span>
+            <a href="#">&gt;</a>
+        </div>
+    </section>
+</main>
+<footer>
+    <div class="footer-content">
+        <section class="social">
+            <h2 class="text-medium text-primary-dark">Nginep</h2>
+            <div class="social-links">
+                <p class="text-secondary text-regular">We serve you well that you want <br> to always take a rest</p>
+                <a href="https://facebook.com/nginepaja" class="media">
+                    <img src="./assets/Facebook.png" alt="Facebook">
+                    <span class="text-regular text-secondary">nginepaja</span>
+                </a>
+                <a href="https://instagram.com/nginepaja" class="media">
+                    <img src="./assets/Instagram.png" alt="Instagram">
+                    <span class="text-regular text-secondary">@nginepaja</span>
+                </a>
+                <a href="https://twitter.com/nginepaja" class="media">
+                    <img src="./assets/Twitter%20Squared.png" alt="Twitter">
+                    <span class="text-regular text-secondary">@nginepaja</span>
+                </a>
+            </div>
+        </section>
+
+        <section class="footer-links">
+            <div class="footer-column">
+                <h3 class="text-primary-dark text-medium">Tutorial</h3>
+                <nav>
+                    <ul>
+                        <li><a href="/tutorial/new-account">Creating a new account</a></li>
+                        <li><a href="/tutorial/choose-room">Choosing a room</a></li>
+                        <li><a href="/tutorial/payment">How to pay</a></li>
+                        <li><a href="/tutorial/checkin">How to CheckIn</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="footer-column">
+                <h3 class="text-primary-dark text-medium">About</h3>
+                <nav>
+                    <ul>
+                        <li><a href="/terms">Terms & Service</a></li>
+                        <li><a href="/privacy">Privacy Policy</a></li>
+                        <li><a href="/about">About Us</a></li>
+                        <li><a href="/refund">Refund</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="footer-column">
+                <h3 class="text-primary-dark text-medium">Contact</h3>
+                <ul>
+                    <li><a href="mailto:ask@nginep.com">ask@nginep.com</a></li>
+                    <li><a href="tel:+62-21-551445">+62 21-551445</a></li>
+                    <li>Bukit Algoritma, Indonesia</li>
+                </ul>
+            </div>
+        </section>
+    </div>
+</footer>
+</body>
+</html>
